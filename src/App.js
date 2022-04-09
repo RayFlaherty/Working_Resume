@@ -1,12 +1,30 @@
-import Nav from './Components/Elements/Nav';
-import './App.css';
-import Modal from './Components/Elements/Modal/Modal';
+import Nav from "./Components/Elements/Nav";
+import "./App.css";
+import DisplayWindow from "./Components/Elements/DisplayWindow/DisplayWindow";
 
 function App() {
+  const navDisplay = [
+    {
+      id: "e1",
+      title: "About Me",
+    },
+    {
+      id: "e2",
+      title: "Working Projects",
+    },
+    {
+      id: "e3",
+      title: "Work History" 
+    },
+    {
+      id:"e4",
+      title: "Gallery",
+    },
+  ];
   return (
     <div>
-      <Nav></Nav>
-      <Modal></Modal>
+      <Nav items= {navDisplay}></Nav>
+      <DisplayWindow></DisplayWindow>
     </div>
   );
 }
