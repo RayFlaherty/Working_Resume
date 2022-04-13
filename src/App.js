@@ -1,6 +1,7 @@
 import Nav from "./Components/Elements/Nav";
 import "./App.css";
 import DisplayWindow from "./Components/Elements/DisplayWindow/DisplayWindow";
+import AboutMe from "./Components/Elements/AboutMe/AboutMe";
 
 function App() {
   const navDisplay = [
@@ -25,6 +26,7 @@ function App() {
     <div>
       <Nav items= {navDisplay}></Nav>
       <DisplayWindow></DisplayWindow>
+      <AboutMe/>
     </div>
   );
 }
